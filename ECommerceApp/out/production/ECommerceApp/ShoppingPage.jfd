@@ -1,0 +1,298 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp ShoppingLeftPane:::p::p, space :::p, comp panel1:::::x}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::p::p, space :0:0:x}, seq t {space :::p, comp ShoppingLeftPane:::::x, space :::p}}"
+		} ) {
+			name: "ShoppingPage"
+			"title": "Shopping Page"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {par l {comp cartLabel:::p:74:p, comp scrollPane3:::p:110:p}, par l {seq {comp label9:::p:39:p, space :0:0:x}, seq {space :6:6:p, comp scrollPane4::::80:x}}}, seq {space :::p, par l {seq {comp label10:::p:80:p, space :p:12:p, comp totalLbl:::::x}, comp paymentBtn::l::190:x}}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :p:95:p, par l {comp cartLabel:::p:32:p, seq {space :6:6:p, comp label9:::p:26:p}}, space :::p, par t {comp scrollPane3:::p:191:p, comp scrollPane4:::p:191:p}, space s:::p, par l {comp label10:::p:37:p, comp totalLbl:::p:37:p}, space s:::p, comp paymentBtn:::p::p, space :::x}}"
+			} ) {
+				name: "ShoppingLeftPane"
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cartLabel"
+					"text": "Your Cart "
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "cartList"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "paymentBtn"
+					"text": "Proceed to Payment"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "paymentBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "totalLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "       Total :"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane4"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "cartPriceList"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Rs."
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par l {seq {comp label18:::p:204:p, space u:::p, par l:::p {comp computerLbl::::204:x, comp computersCmbBox::::204:x, seq l {comp label20:::p:97:p, space :::p, comp computersPrice::::101:x}, seq l {comp label22:::p:97:p, space :::p, comp computersRatingLbl::::101:x}, comp buyCompButton::::204:x}, space ::107:x, comp label24:::p:212:p}, seq {par l {comp label1:::p:207:p, comp label5::l:p:204:p}, space :::p, par l {seq {par l {seq {par l {comp label6:::p:85:p, comp label14:::p:73:p}, space u:::p, par l:::p {comp booksRatingLbl::::110:x, comp booksPrice::::110:x}}, comp buyBooksBtn:::p:207:p, par t:::p {comp booksComBox::l::207:x, comp booksLbl::l:::x}, comp buyMobilesBtn::l:p:207:p}, space :0:81:x}, seq {par l {comp mobilesComBox::l:p:202:p, par t:l::p {comp mobilePhonesLbl::l:::x, seq l {comp label2:::p:84:p, space s:::p, comp mobilePrice:::p:75:p}}, seq l {comp mobilerating:::p:69:p, space :p:33:p, comp mobileRatingLbl:::p:96:p}}, space ::86:x}}, par l:::p {seq l {space :p:26:p, comp label3:::p:212:p}, comp label8::t:p:212:p}}}, space :p:37:p, par l {par t:::p {comp footwearsComBox::l::166:x, comp footwearsLbl::l::166:x}, par l:::p {seq l {comp label4:::p::p, space u:::p, comp shoesPrice::::41:x, space :p:61:p}, comp clothesLbl::l:::x, seq l {par l:::p {comp label7::::95:x, comp label16::::95:x}, space :::p, comp watchRatingLbl:::p:65:p}, comp buyWatchesBtn::l:p:157:p, comp ClothesCmbBox::l:p:160:p, seq l {par t:::p {comp label28::l::83:x, comp label25::l::83:x}, space :::p, par l {comp clothesPrice:::::x, seq {comp clothesRatingLbl:::p:60:p, space :0:0:x}}}, comp buyClothesBtn::l:p:167:p, seq l {comp label12:::p:82:p, space u:::p, comp shoeRatingLbl:::p:72:p}}, par t:l {comp watchesPrice::t:p:44:p, par t:l::p {comp watchesComBox::l::166:x, comp watchesLbl::l::166:x, comp buyFootwearsBtn::l::166:x}}}, space :::p}}"
+				"$verticalGroup": "par l {seq {par l {seq {space :p:9:p, par l {seq l {comp footwearsLbl:::p:30:p, space :::p, comp footwearsComBox:::p::p, space :::p, par l {comp label4:::p:31:p, comp shoesPrice:::::x}, space :::p, par l {comp label12:::p:34:p, comp shoeRatingLbl:::::x}, space s:::p, comp buyFootwearsBtn::::32:x}, seq {par l:::p {seq {comp mobilePhonesLbl:::p:28:p, space :::p, comp mobilesComBox:::p::p, space :::p, par l {comp label2:::p:34:p, comp mobilePrice:::p:40:p}, space :::p, par l {comp mobilerating:::p:32:p, comp mobileRatingLbl:::p:32:p}, space :::x, comp buyMobilesBtn:::p:33:p}, comp label1:::p::p}, space :0:6:x}}}, seq l {space :::p, comp label3:::p:193:p}}, par l {seq l {space :p:40:p, comp watchesLbl:::p:32:p, space :::p, comp watchesComBox:::p::p, space :::p, par l {comp watchesPrice:::::x, comp label7:::p:35:p}, space :::p, par l {seq {comp label16:::p:29:p, space :0:0:x}, comp watchRatingLbl:::::x}, space :::p, comp buyWatchesBtn:::p:33:p}, seq l {space :p:37:p, par t:::p {seq {comp booksLbl:::p:28:p, space :::p, comp booksComBox:::p::p, space :::p, par l {seq {comp label6:::p:28:p, space :0:0:x}, comp booksPrice:::::x}, space :::p, par l {comp label14:::::x, seq {comp booksRatingLbl:::p:34:p, space :0:0:x}}, space :::x, comp buyBooksBtn:::::x}, comp label5:::p:182:p}, space :0:0:x}, seq t {space :::x, comp label8:::p:182:p}}, space s:::p, par l {seq l {comp clothesLbl:::p:30:p, space :::p, comp ClothesCmbBox:::p::p, space :::p, par l:::p {comp label25::::41:x, comp clothesPrice::::41:x}, space :::p, par b {comp label28::b:p:28:p, comp clothesRatingLbl::b:p:28:p}, space :::p, comp buyClothesBtn:::p::p}, comp label18:::p:191:p, seq l {comp computerLbl:::p:33:p, space :::p, comp computersCmbBox:::p::p, space :::p, par l:::p {comp label20::::33:x, comp computersPrice::::33:x}, space u:::p, par l:::p {comp label22::::32:x, comp computersRatingLbl::::32:x}, space :::p, comp buyCompButton:::p::p}, comp label24:::p:201:p}, space ::32:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "mobilesComBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mobilesComBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mobilePhonesLbl"
+					"text": "Mobile Phones"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyMobilesBtn"
+					"text": "Add to Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyMobilesBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "text"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\shoe.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "footwearsLbl"
+					"text": "Footwears"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "footwearsComBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "footwearsComBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyFootwearsBtn"
+					"text": "Add to Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyFootwearsBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "text"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\phoneIcon.jpg" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "text"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\books.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "booksLbl"
+					"text": "Books"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "booksComBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "booksComBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyBooksBtn"
+					"text": "Add to Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyBooksBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "text"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\watchicon.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "watchesLbl"
+					"text": "Watches"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "watchesComBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "watchesComBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyWatchesBtn"
+					"text": "Add to Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyWatchesBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mobilePrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "shoesPrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "booksPrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "watchesPrice"
+					"text": " "
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Price :   Rs."
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Price :   Rs."
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Price :     Rs."
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Price :   Rs."
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mobilerating"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mobileRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "shoeRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "booksRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "watchRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label18"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\computericon.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "computerLbl"
+					"text": "Computers/Appliances"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "computersCmbBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "computersCmbBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label20"
+					"text": "Price :    Rs.    "
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "computersPrice"
+					"text": "text"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label22"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "computersRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label24"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\shirticon.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label25"
+					"text": "Price  Rs ."
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "ClothesCmbBox"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ClothesCmbBoxActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "clothesLbl"
+					"text": "Clothes"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "clothesPrice"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label28"
+					"text": "Rating :"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "clothesRatingLbl"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyClothesBtn"
+					"text": "Add  to  Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyClothesBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buyCompButton"
+					"text": "Add to Cart"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buyCompButtonActionPerformed", true ) )
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "viewProfbtn"
+					"text": "Profile"
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewProfMenu"
+						"text": "View and Edit Profile"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewProfMenuActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "logoutBtn"
+					"text": "Actions"
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, true )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutBtnActionPerformed", true ) )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewPurPdtmenu"
+						"text": "View History"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewPurPdtmenuActionPerformed", true ) )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "logOutBtn"
+					"text": "LogOut"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logOutBtnActionPerformed", true ) )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1185, 720 )
+		} )
+		add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+			name: "scrollPane2"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 195, 100 )
+		} )
+	}
+}

@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :p:49:p, par l {comp label4::l:p:104:p, comp label1::l:p:104:p, comp label2:::p:145:p}, space ::17:x, par l:::p {comp cardNoTxtFld::::177:x, comp paymentModeComBox::::177:x, comp priceLbl::l::177:x}, space :88:88:p, par l {comp scrollPane1:::p:153:p, comp label3:::p:144:p}, space :p:34:p}, seq l {space :p:176:p, comp button1:::p:187:p, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:49:p, par l {seq l {comp label3:::p:26:p, space :::p, comp scrollPane1:::p:170:p}, seq l {par b {comp label4::b:p:36:p, comp priceLbl::b:p:36:p}, space :p:34:p, par b {comp label1::b:p:30:p, comp paymentModeComBox::b:p::p}, space :p:38:p, par b {comp cardNoTxtFld::b:p::p, comp label2::b:p:30:p}}}, space ::15:x, comp button1:::p:40:p, space :p:34:p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "paymentModeComBox"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Credit Card"
+						addElement( "Credit Card" )
+						addElement( "Debit Card" )
+						addElement( "Cash on Delivery" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "cardNoTxtFld"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "itemsList"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Payment Mode"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Card Number"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Selected Items"
+					"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Amount"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "priceLbl"
+					"text": "text"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Pay"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 665, 380 )
+		} )
+	}
+}

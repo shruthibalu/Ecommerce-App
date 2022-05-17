@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "paymentframe"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p::p, par l {seq l {space :p:68:p, par t {seq t {par l {seq l {comp label3:::p:161:p, space s:::p, comp amount:::p:130:p}, comp label5:::p:432:p}, space :p:5:p}, seq t {comp logoutBtn:::p:166:p, space :p:133:p, comp exitBtn:::p:153:p}}, space :::x}, seq {par l {seq {space :p:126:p, comp label2::::0:x}, seq l {space :p:172:p, comp expDate::::390:x}}, space :::p}}}}"
+				"$verticalGroup": "par l {seq l {space :p:26:p, par l {comp label1:::p:304:p, seq {comp label2:::p:76:p, space :p:37:p, par b {comp label3::b:p:52:p, comp amount::b:::x}, space s:::p, comp expDate:::p:54:p, space :p:64:p, comp label5:::p:58:p}}, space :p:30:p, par b {comp exitBtn::b:p:50:p, comp logoutBtn::b:p:50:p}, space ::40:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\pay.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Your Payment Transaction has been Processed."
+					"font": new java.awt.Font( "Segoe UI", 1, 28 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Amount  :  Rs."
+					"font": new java.awt.Font( "Segoe UI", 1, 18 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Thank You for your Purchase.Come back Soon !!"
+					"font": new java.awt.Font( "Segoe UI", 1, 18 )
+					"foreground": sfield java.awt.Color blue
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "logoutBtn"
+					"text": "LogOut"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "exitBtn"
+					"text": "Exit"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "expDate"
+					"text": "Your Order will be delivered within 3 Days."
+					"font": new java.awt.Font( "Segoe UI", 1, 18 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "amount"
+					"text": "0"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 885, 545 )
+		} )
+	}
+}

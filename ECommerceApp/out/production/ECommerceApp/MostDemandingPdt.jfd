@@ -1,0 +1,29 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::135:x, comp label1:::p:248:p, space :p:115:p}, seq l {space :::p, comp scrollPane1::::486:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp label1:::p:30:p, space s:::p, comp scrollPane1::::266:x, space :::p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Most Demanding Products"
+				"font": new java.awt.Font( "Segoe UI", 1, 18 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "pdtTable"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 360 )
+		} )
+	}
+}

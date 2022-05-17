@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "adminLoginPage"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space ::176:x, comp label3:::p::p, par l {seq {space :p:37:p, par l {comp adminUnameLbl:::p:91:p, comp adminpwdLbl:::p:91:p}, space :p:40:p, par l:::p {comp adminUNameTxtFld::::173:x, comp adminPwdTxtFld::::173:x}}, seq l {space :p:63:p, comp adminLoginBtn:::p:109:p, space :p:43:p, comp adminClrBtn:::p:112:p}}, space :99:176:x}, seq l {space :p:309:p, comp label4:::p:386:p, space ::248:x}}"
+				"$verticalGroup": "par l {seq l {space :p:24:p, comp label4:::p:47:p, space s:::p, par l {seq {par b {comp adminUnameLbl::b:p:35:p, comp adminUNameTxtFld::b:p:35:p}, space :p:41:p, par l {comp adminpwdLbl:::p:30:p, comp adminPwdTxtFld:::p:39:p}, space :p:38:p, par b {comp adminLoginBtn::b:p:42:p, comp adminClrBtn::b:p:42:p}}, comp label3:::p:235:p}, space ::111:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "adminUnameLbl"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "adminpwdLbl"
+					"text": "Password"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "adminUNameTxtFld"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\adminlogo.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Login as Administrator"
+					"font": new java.awt.Font( "Arial", 1, 18 )
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "adminLoginBtn"
+					"text": "Login"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "adminLoginBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "adminClrBtn"
+					"text": "Clear"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "adminClrBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "adminPwdTxtFld"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 945, 475 )
+		} )
+	}
+}

@@ -1,0 +1,190 @@
+CREATE TABLE admin (
+  collagename varchar(50) DEFAULT NULL,
+  address varchar(100) DEFAULT NULL,
+  emailid varchar(50) DEFAULT NULL,
+  contactnumber varchar(40) DEFAULT NULL,
+  website varchar(30) DEFAULT NULL,
+  lastlogin varchar(40) DEFAULT NULL,
+  password varchar(30) DEFAULT NULL,
+  facebook varchar(100) DEFAULT NULL,
+  instagram varchar(100) DEFAULT NULL,
+  twitter varchar(100) DEFAULT NULL,
+  linkedin varchar(100) DEFAULT NULL,
+  logo blob DEFAULT NULL,
+  activestatus integer DEFAULT 0);
+
+
+
+ INSERT INTO admin(collagename, address, emailid, contactnumber, website, lastlogin, password, facebook, instagram, twitter, linkedin, activestatus) VALUES
+('Silveroak Collage of Engineering And Technology', 'Opp. Bhagwat Vidyapith, S. G. Road, Gota, Ahmedabad - 382481', 'info@silveroakuni.ac.in', '+91-79-66046300', 'https://silveroakuni.ac.in/', '18-Oct-2020 12:13:36 PM', 'admin', 'https://www.facebook.com/SilverOakUni/', 'https://www.instagram.com/silveroakuni/', 'https://twitter.com/silveroakuni', 'https://www.linkedin.com/company/silveroakuni',0);
+
+CREATE TABLE attandance (
+  subjectcode varchar(30) DEFAULT NULL,
+  dateab varchar(30) DEFAULT NULL,
+  rollnumber integer DEFAULT NULL,
+  present integer DEFAULT 0,
+  courcecode varchar(20) DEFAULT NULL,
+  semoryear integer DEFAULT NULL
+);
+
+
+CREATE TABLE chat (
+  sr_no integer NOT NULL,
+  fromuserid varchar(70) DEFAULT NULL,
+  fromusername varchar(50) DEFAULT NULL,
+  touserid varchar(70) DEFAULT NULL,
+  message varchar(70) DEFAULT NULL,
+  messagetime varchar(20) DEFAULT NULL,
+  messagedate varchar(40) DEFAULT NULL,
+  readby varchar(20) DEFAULT NULL
+);
+
+
+CREATE TABLE cources (
+  sr_no integer NOT NULL,
+  Courcecode varchar(20) DEFAULT NULL,
+  CourceName varchar(30) DEFAULT NULL,
+  semoryear varchar(5) DEFAULT NULL,
+  totalsemoryear integer DEFAULT NULL
+);
+
+
+CREATE TABLE faculties (
+  facultyid integer DEFAULT NULL,
+  facultyname varchar(30) DEFAULT NULL,
+  state varchar(30) DEFAULT NULL,
+  city varchar(30) DEFAULT NULL,
+  emailid varchar(50) DEFAULT NULL,
+  contactnumber varchar(20) DEFAULT NULL,
+  qualification varchar(30) DEFAULT NULL,
+  experience varchar(30) DEFAULT NULL,
+  birthdate varchar(30) DEFAULT NULL,
+  gender varchar(10) DEFAULT NULL,
+  profilepic blob DEFAULT NULL,
+  courcecode varchar(20) DEFAULT 'NOT ASSIGNED',
+  semoryear integer DEFAULT 0,
+  subject varchar(40) DEFAULT 'NOT ASSIGNED',
+  position varchar(40) DEFAULT 'NOT ASSIGNED',
+  sr_no integer NOT NULL,
+  lastlogin varchar(100) DEFAULT NULL,
+  password varchar(30) DEFAULT NULL,
+  activestatus integer DEFAULT 0,
+  joineddate varchar(50) DEFAULT NULL
+);
+
+
+CREATE TABLE marks (
+  courcecode varchar(20) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  subjectcode varchar(20) DEFAULT NULL,
+  subjectname varchar(40) DEFAULT NULL,
+  rollnumber integer DEFAULT NULL,
+  theorymarks integer DEFAULT NULL,
+  practicalmarks integer DEFAULT NULL
+);
+
+
+CREATE TABLE notification (
+  sr_no integer NOT NULL,
+  userprofile varchar(30) DEFAULT NULL,
+  courcecode varchar(30) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  userid varchar(30) DEFAULT NULL,
+  title varchar(100) DEFAULT NULL,
+  message varchar(1000) DEFAULT NULL,
+  time varchar(100) DEFAULT NULL,
+  readby varchar(30) DEFAULT NULL
+);
+
+
+CREATE TABLE result (
+  courcecode varchar(30) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  isdeclared integer DEFAULT NULL
+);
+CREATE TABLE rollgenerator (
+  courcecode varchar(20) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  rollnumber integer DEFAULT NULL
+);
+
+
+
+
+CREATE TABLE students (
+  Courcecode varchar(20) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  rollnumber integer DEFAULT NULL,
+  optionalsubject varchar(30) DEFAULT NULL,
+  firstname varchar(20) DEFAULT NULL,
+  lastname varchar(20) DEFAULT NULL,
+  emailid varchar(50) DEFAULT NULL,
+  contactnumber varchar(20) DEFAULT NULL,
+  dateofbirth varchar(15) DEFAULT NULL,
+  gender varchar(10) DEFAULT NULL,
+  state varchar(30) DEFAULT NULL,
+  city varchar(30) DEFAULT NULL,
+  fathername varchar(20) DEFAULT NULL,
+  fatheroccupation varchar(30) DEFAULT NULL,
+  mothername varchar(30) DEFAULT NULL,
+  motheroccupation varchar(30) DEFAULT NULL,
+  profilepic blob DEFAULT NULL,
+  sr_no integer NOT NULL,
+  lastlogin varchar(100) DEFAULT NULL,
+  userid varchar(50) DEFAULT NULL,
+  password varchar(30) DEFAULT NULL,
+  activestatus integer DEFAULT 0,
+  admissiondate varchar(50) DEFAULT NULL
+);
+
+
+
+CREATE TABLE subject (
+  subjectcode varchar(20) DEFAULT NULL,
+  subjectname varchar(50) DEFAULT NULL,
+  courcecode varchar(20) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  subjecttype varchar(30) DEFAULT NULL,
+  theorymarks integer DEFAULT NULL,
+  practicalmarks integer DEFAULT NULL
+);
+
+CREATE TABLE users (
+  sr_no integer NOT NULL,
+  courcecode varchar(30) DEFAULT NULL,
+  semoryear integer DEFAULT NULL,
+  userid varchar(15) DEFAULT NULL,
+  logintime varchar(100) DEFAULT NULL,
+  userprofile varchar(15) DEFAULT NULL
+);
+
+
+
+ALTER TABLE chat
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE cources
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE faculties
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE notification
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE students
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE subject
+  ADD UNIQUE subjectcode (subjectcode);
+
+ALTER TABLE users
+  ADD PRIMARY KEY (sr_no);
+ALTER TABLE chat
+  MODIFY sr_no integer NOT NULL;
+ALTER TABLE cources
+  MODIFY sr_no integer NOT NULL AUTOINCREMENT;
+ALTER TABLE faculties
+  MODIFY sr_no integer NOT NULL AUTO_INCREMENT;
+ALTER TABLE notification
+  MODIFY sr_no integer NOT NULL AUTO_INCREMENT;
+ALTER TABLE students
+  MODIFY sr_no integer NOT NULL;
+ALTER TABLE users
+  MODIFY sr_no integer NOT NULL AUTO_INCREMENT;
+COMMIT;

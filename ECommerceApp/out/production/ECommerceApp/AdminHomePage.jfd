@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "adminhome"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq {par l:::p {seq {space :::p, comp customersLbl:::p::p, space :p:90:p, comp productsLabel:::p::p, space :p:97:p, comp transactionsLabel:::p::p}, seq l {space :p:21:p, comp listAllCustomersBtn:::p:240:p, space :p:161:p, par l {comp addProductBtn:::::x, seq {comp listAllPdtsBtn:::p:228:p, space :0:0:x}}, space :p:118:p, comp listallPayments::::280:x, space :0:81:x}}, space :0:28:x}, seq t {space :0:985:x, comp backBtn:::p:172:p}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :p:37:p, par t:::p {comp customersLbl::l:::x, comp productsLabel::l:p:268:p, comp transactionsLabel::l:::x}, space :p:51:p, par l:::p {comp listAllCustomersBtn::::55:x, comp listAllPdtsBtn::l::55:x, comp listallPayments::l::55:x}, space :p:37:p, comp addProductBtn:::p:50:p, space ::53:x, comp backBtn:::p::p, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "customersLbl"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\person.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "productsLabel"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\cartlogo.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "transactionsLabel"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\arvin\\IdeaProjects\\ECommerceApp\\images\\paymentlogo.png" )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "listAllCustomersBtn"
+					"text": "List Customers"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "listAllCustomersBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "listAllPdtsBtn"
+					"text": "List Products"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "listAllPdtsBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "listallPayments"
+					"text": "List all Payment Transactions"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "listallPaymentsActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addProductBtn"
+					"text": "Add to Inventory"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addProductBtnActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBtn"
+					"text": "Back to Login"
+					"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBtnActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 35 )
+			"size": new java.awt.Dimension( 1165, 635 )
+		} )
+	}
+}

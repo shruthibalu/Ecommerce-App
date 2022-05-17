@@ -1,0 +1,156 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp panel1:::p::p, space :::p, par l {comp scrollPane1::l::354:x, seq {par l {comp label11:::p:100:p, comp label12:::p:102:p}, space :0:252:x}, comp scrollPane2::l::354:x}, space :::p}}"
+			"$verticalGroup": "par l {seq {par l {seq {space :::p, comp panel1:::::x}, seq l {space :p:13:p, comp label11:::p:26:p, space :::p, comp scrollPane1:::p:139:p, space s:::p, comp label12:::p:35:p, space :::p, comp scrollPane2:::p:383:p, space :0:138:x}}, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp panel2:::p::p, space :0:6:x}, comp panel3::l:::x}"
+				"$verticalGroup": "par l {seq l {comp panel2:::p::p, space :::p, comp panel3:::p::p, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq {par l {seq {space :p:37:p, comp AddtoInventoryBtn:::p:180:p}, seq l {space :::p, comp label5:::p:103:p, space s:::p, comp stockvalue:::p:90:p}}, space :0:35:x}, seq {space :::p, par l {comp label1::l:::x, seq {par l {seq {comp label2:::p:89:p, space :0:14:x}, comp label6::t::103:x}, space s:::p, par l {seq {comp ratingtxtfld:::p:119:p, space :0:6:x}, comp categoryComBox:::::x}}, seq {comp label13:::p:103:p, space s:::p, comp priceTxtFld:::p:119:p, space :0:6:x}, seq l {comp label4:::p:103:p, space :p:18:p, comp pdtName:::::x}}}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:33:p, space u:::p, par l {comp label2:::p:26:p, comp categoryComBox::::36:x}, space u:::p, par b {comp label4::b:p:32:p, comp pdtName::b:p::p}, par l {seq {space s:::p, comp label5:::p:32:p}, seq l {space :p:26:p, comp stockvalue:::p:38:p}}, space :p:24:p, par b {comp label6::b:p:32:p, comp ratingtxtfld::b:p:32:p}, space u:::p, par l {comp label13:::p:33:p, comp priceTxtFld::l:p:33:p}, space :p:33:p, comp AddtoInventoryBtn:::p:39:p, space :p:21:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Add Product"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Segoe UI", 1, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Category"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "categoryComBox"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "categoryComBoxActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Product Name"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "pdtName"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Quantity"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "stockvalue"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Rating"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "ratingtxtfld"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "AddtoInventoryBtn"
+						"text": "Add to Inventory"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AddtoInventoryBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": "Price"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "priceTxtFld"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq l {space :::p, par l {comp label8:::p:109:p, comp label9::l:p:109:p}, space s:::p, par l {comp productCombox:::::x, comp categoryCombox:::::x}}, seq {par l {seq {space :p:41:p, comp label7:::p:177:p}, seq l {space :::p, comp label10:::p:109:p, space s:::p, comp pdtstock:::p:100:p}}, space :0:25:x}}, space :::p}, seq t {space :0:59:x, comp updateBtn:::p:150:p, space :p:55:p}}"
+					"$verticalGroup": "par l {seq l {comp label7:::p:34:p, space u:::p, par b {comp label8::b:p:41:p, comp categoryCombox::b:p:36:p}, space s:::p, par b {comp productCombox::b:p:39:p, comp label9::b:p:39:p}, space u:::p, par l:::p {comp label10::::34:x, comp pdtstock::::34:x}, space ::12:x, comp updateBtn:::p:38:p, space :::p}}"
+				} ) {
+					name: "panel3"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "Update Stock"
+						"font": new java.awt.Font( "Segoe UI", 1, 16 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "Category"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "Product Name"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "categoryCombox"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "categoryComboxActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "productCombox"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": "Add Stock"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "pdtstock"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "updateBtn"
+						"text": "Update"
+						"font": new java.awt.Font( "Segoe UI", 1, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "updateBtnActionPerformed", true ) )
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "categoryTable"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "Category"
+				"font": new java.awt.Font( "Segoe UI", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "Products"
+				"font": new java.awt.Font( "Segoe UI", 1, 16 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "productstable"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 640, 810 )
+		} )
+	}
+}

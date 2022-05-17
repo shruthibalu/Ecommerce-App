@@ -1,0 +1,120 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p::p, space :::p, par l {comp scrollPane2::t::475:x, seq l {comp Products:::p:140:p, space :0:335:x}, comp scrollPane1::l::475:x}}}"
+			"$verticalGroup": "par l {seq l {space :::p, par l {comp panel1::::628:x, seq {comp scrollPane1:::p:225:p, space s:::p, comp Products:::p:32:p, space :::p, comp scrollPane2:::p:286:p, space :0:0:x}}}}"
+		} ) {
+			name: "transFrame"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp listTransBtn::l:::x, comp listpdtButton::l:::x, comp mstDmdPdtBtn::l:::x, comp panel2::l:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp listTransBtn:::p:32:p, space :::p, comp listpdtButton:::p::p, space :::p, comp mstDmdPdtBtn:::p:34:p, space :::p, comp panel2:::p::p, space :::p}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "listTransBtn"
+					"text": "List all Transactions"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "listTransBtnActionPerformed", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {comp unTxtFld::l:::x, comp srchUn::l:::x, comp dateTxtFld::l:::x, comp dateTxtFld2::l:::x, comp button1::l:::x, comp srchPdt::l:::x, comp pdtTextFld::l:::x, seq {par l {comp label4::l:p:93:p, comp label5::l:p:130:p, comp label2::l:p:84:p, comp label6::l:p:87:p, comp label3::l:p:86:p, comp label1::l:p:89:p}, space :0:0:x}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :p:18:p, comp label1:::p:30:p, space :::p, comp label3:::p:30:p, space :::p, comp pdtTextFld:::p:38:p, space :::p, comp srchPdt:::p:36:p, space :::p, comp label4:::p:28:p, space :::p, comp unTxtFld:::p:38:p, space :::p, comp srchUn:::p::p, space :::p, comp label5:::p:28:p, space :::p, comp label2:::p::p, space :p:4:p, comp dateTxtFld:::p:30:p, space :::p, comp label6:::p::p, space :::x, comp dateTxtFld2:::p:30:p, space :::p, comp button1:::p::p, space :p:12:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Search By:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Product"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "pdtTextFld"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "srchPdt"
+						"text": "Search By Product"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "srchPdtActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Username"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "unTxtFld"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "srchUn"
+						"text": "Search By Username"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "srchUnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Date (dd/mm/yyyy)"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "dateTxtFld"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+						"cursor": new java.awt.Cursor( 2 )
+						"toolTipText": "From Date"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Search By Date"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "dateTxtFld2"
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+						"toolTipText": "To Date"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "From Date"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "To Date"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "listpdtButton"
+					"text": "List Purchased Products "
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "listpdtButtonActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mstDmdPdtBtn"
+					"text": "Most Demanding Products"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mstDmdPdtBtnActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "pdtTransTable"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "cart_items_table"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Products"
+				"text": "Products Purchased"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 5 )
+			"size": new java.awt.Dimension( 690, 645 )
+		} )
+	}
+}
